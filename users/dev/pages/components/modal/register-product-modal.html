@@ -1,0 +1,158 @@
+<!-- Register Modal -->
+<div class="modal fade" id="registerProductModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Registrar Producto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-4" id="modalForm" novalidate>
+
+          <div class="col-md-6">
+            <label for="fecha" class="form-label">Fecha</label>
+            <input type="date" id="fecha" class="form-control" required />
+          </div>
+          <div class="col-md-6">
+            <label for="empresa" class="form-label">Empresa</label>
+            <input id="empresa" class="form-control" placeholder="Empresa" required />
+          </div>
+
+          <div class="display-flex-center">
+            <div class="col-md-6">
+              <label for="descripcion" class="form-label">Descripción</label>
+              <input id="descripcion" class="form-control" placeholder="Descripción" required />
+            </div>
+            <div class="col-md-6">
+              <label for="marca" class="form-label">Marca</label>
+              <input id="marca" class="form-control" placeholder="Marca" required />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="tamano" class="form-label">Tamaño</label>
+            <input id="tamano" class="form-control" placeholder="Tamaño" required />
+          </div>
+
+          <div class="display-flex-center">
+            <div class="col-md-6">
+              <label for="venta" class="form-label">Venta</label>
+              <input id="venta" class="form-control" placeholder="Venta" required />
+            </div>
+            <div class="col-md-6">
+              <label for="precioUnitario" class="form-label">P. Unitario</label>
+              <input id="precioUnitario" class="form-control" placeholder="P. Unitario" required />
+            </div>
+          </div>
+
+          <div class="display-flex-center">
+            <div class="col-md-6">
+              <label for="ganancia" class="form-label">Ganancia</label>
+              <input id="ganancia" class="form-control" placeholder="Ganancia" required />
+            </div>
+            <div class="col-md-6">
+              <label for="precio" class="form-label">Precio</label>
+              <input id="precio" class="form-control" placeholder="Precio" required />
+            </div>
+          </div>
+
+          <div class="display-flex-center">
+            <div class="col-md-6">
+              <label for="porcentaje" class="form-label">Porcentaje</label>
+              <input id="porcentaje" class="form-control" placeholder="Porcentaje" required />
+            </div>
+            <div class="col-md-6">
+              <label for="cantidad" class="form-label">Cantidad</label>
+              <input id="cantidad" class="form-control" placeholder="Cantidad" required />
+            </div>
+          </div>
+
+          <div class="display-flex-center">
+            <div class="col-md-6">
+              <label for="itbms" class="form-label">Itbms</label>
+              <select id="itbms" class="form-control" required>
+                <option value="" disabled selected>Selecciona ITBMS</option>
+                <option value="0">Sin Itbms</option>
+                <option value="7">7%</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+              </select>
+            </div>
+            
+            <div class="col-md-6">
+              <label for="descuento" class="form-label">Descuento</label>
+              <input id="descuento" class="form-control" placeholder="descuento" required />
+            </div>
+          </div>
+
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary">Registrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  #registerProductModal .modal-content {
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  #registerProductModal .modal-header {
+    background-color: #004085;
+    color: white;
+    border-bottom: 2px solid #003366;
+    margin-bottom: 1rem;
+  }
+
+  #registerProductModal .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  #registerProductModal .btn-close {
+    color: black;
+    font-size: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  #registerProductModal .btn-close:hover {
+    color: var(--clr-primary);
+  }
+
+  #registerProductModal .form-label {
+    font-weight: bold;
+    color: #495057;
+  }
+
+  #registerProductModal .form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  #registerProductModal .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+  }
+
+  #registerProductModal .btn-primary {
+    background-color: #004085;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  #registerProductModal .btn-primary:hover {
+    background-color: #003366;
+  }
+</style>
