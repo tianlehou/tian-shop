@@ -1,6 +1,6 @@
 // authCheck.js
 import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
-import { auth } from '../../environment/firebaseConfig.js'; // Asegúrate de importar correctamente tu configuración de Firebase
+import { auth } from '../../environment/firebaseConfig.js';
 
 // Tiempo de inactividad en milisegundos (5 minutos)
 const INACTIVITY_TIME_LIMIT = 30 * 60 * 1000;
@@ -36,7 +36,7 @@ export function checkAuth() {
   onAuthStateChanged(auth, (user) => {
     if (!user) {
       // Si no hay un usuario autenticado, redirige al login
-      window.location.href = '../../login.html';
+      window.location.href = '../../../login.html';
     } else {
       // Configurar los eventos de actividad solo si el usuario está autenticado
       setupActivityListeners();

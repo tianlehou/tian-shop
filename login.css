@@ -1,6 +1,6 @@
 /* login.css */
-@import url(./assets/css/toggle-password.css);
-@import url(./assets/css/validation.css);
+@import url(./css/toggle-password.css);
+@import url(./css/validation.css);
 
 * {
     margin: 0;
@@ -183,6 +183,7 @@ body {
 
 .index .input-box .toggle-password {
     position: absolute;
+    top: 25px;
     right: 15px;
     cursor: pointer;
     color: var(--clr-neon-green);

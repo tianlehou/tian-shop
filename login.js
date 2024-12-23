@@ -1,5 +1,5 @@
-import "./auth/signin_Form.js";
-import "./auth/forgot_password.js"
+import "./auth/login_Form.js";
+import "./auth/forgot_password_Form.js"
 import "./auth/showHidePassword/showHidePassword.js";
 import { setupInstallPrompt } from './modules/installPrompt.js';
 

@@ -1,3 +1,4 @@
+// firebaseConfig.js
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
 import { getDatabase } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";

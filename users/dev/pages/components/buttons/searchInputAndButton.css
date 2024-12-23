@@ -1,0 +1,74 @@
+.searchInput-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInput-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInput-content #searchInput {
+    width: 180px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid var(--clr-primary);
+    border-radius: 16px 0 0 16px;
+}
+
+.searchInput-container #searchButton {
+    height: 50px;
+    padding: 0 20px;
+    background-color: var(--clr-primary);
+    font-size: 1.5em;
+    font-weight: 500;
+    color: white;
+    border-radius: 0 16px 16px 0;
+}
+
+#searchButton:hover,
+#showModalButton:hover {
+    color: white;
+}
+
+#showModalButton {
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: 17px;
+    color: var(--clr-primary);
+    border: 2px solid var(--clr-primary);
+    background-color: white;
+    border-radius: 16px;
+    margin-left: 10px;
+    z-index: 1;
+}
+
+#showModalButton::before {
+    position: absolute;
+    content: "";
+    background: var(--clr-primary);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+#showModalButton:hover {
+    color: white;
+}
+
+#showModalButton:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+}
+
+#showModalButton:hover::before {
+    top: -30px;
+    left: -30px;
+}
